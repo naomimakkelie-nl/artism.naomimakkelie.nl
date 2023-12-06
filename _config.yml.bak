@@ -1,0 +1,96 @@
+title: ARTISM MAGAZINE
+description: "A simple Jekyll theme for words and pictures."
+author: Naomi Makkelie
+url: https://artism.naomimakkelie.nl
+baseurl: "/" # the subpath of your site, e.g. "/blog"
+markdown: kramdown
+
+#theme: minima
+#theme: jekyll-theme-so-simple
+remote_theme: "mmistakes/so-simple-theme@3.2.0"
+
+read_time: true
+words_per_minute: 200
+
+google_analytics: ""# Google Analytics id, e.g. "UA-NNNNNNNN-N"
+
+paginate: 10
+paginate_path: /page:num/
+
+search_full_content: false
+
+# Taxonomy pages
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
+
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+
+# Front Matter Defaults
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comments: true
+      share: true
+  # Recipe defaults
+  - scope:
+      path: "_recipes"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
+
+# Site Author
+author:
+  name: Naomi Makkelie
+  picture: /images/naomi-makkelie.jpg
+  email: contact@naomimakkelie.nl
+  links:
+    - title: Instagram
+      url: https://instagram.com/naomi.mitsuko.makkelie
+      icon: fab fa-instagram
+
+# Footer Links
+footer_links:
+  - title: Instagram
+    icon: fab fa-instagram
+    url: https://instagram.com/naomi.mitsuko.makkelie
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+  - jekyll-default-layout
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-archives
+  - jekyll-paginate
+  #- jekyll-paginate-v2
+  #- jekyll-admin
+  #- jekyll-picture-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
