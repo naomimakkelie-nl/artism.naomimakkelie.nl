@@ -1,7 +1,21 @@
 ---
-layout: home
-excerpt: "A simple and clean responsive Jekyll theme for words and photos."
-show_excerpts: true
-paginate: true
-entries_layout: list
+layout: default
+title: Home
 ---
+
+<!-- Posts Index
+================================================== -->
+<div class="blog-grid-container">
+    {% for post in paginator.posts %}
+        {% include postbox.html %}
+    {% endfor %}
+</div>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
+
