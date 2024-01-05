@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<style>
+#tags span {
+    padding: 0.3rem 0.7rem;
+    border-radius: 5rem;
+    color: white;
+    font-size: 0.8rem;
+}
+#tags span:nth-child(1) {
+    background-color: orange;
+}
+#tags span:nth-child(2) {
+    background-color: hotpink;
+}
+#tags span:nth-child(3) {
+    background-color: limegreen;
+}
+table {
+width: 100%;
+}
+</style>
+<h1> {{ page.artist.name }} </h1>
+<h4>{{ page.artist.dateOfBirth }}, {{ page.artist.placeOfOrigin }}</h4>
+<div id="tags">
+{% for tag in page.artist.tags %}
+<span>{{ tag }}</span>
+{% endfor %}
+</div>
+<a href="{{ page.artist.website }}">{{ page.artist.website }}</a>
+
+<p> {{page.artist.intro}}</p>
+
+
+<h2>Exhibitions</h1>
+
+<table>
+<thead>
+<tr><th>Title</th><th>Year</th></tr>
+</thead>
+<tbody>
+{% for exhibition in page.artist.exhibitions %}
+<tr><td>{{ exhibition.title }}</td><td>{{ exhibition.year }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+

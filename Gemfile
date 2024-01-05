@@ -11,13 +11,17 @@ source "https://rubygems.org"
 #gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'webrick'
 gem 'faraday-retry'
-gem "github-pages", group: :jekyll_plugins
+#gem "github-pages", group: :jekyll_plugins
+gem 'google-protobuf'
+gem 'sass-embedded'
+gem 'jekyll'
 group :jekyll_plugins do
     gem 'jekyll-feed'
     gem 'jekyll-sitemap'
     gem 'jekyll-paginate'
     gem 'jekyll-seo-tag'
-#    gem 'jekyll-archives'
+    gem 'jekyll-admin'
+    gem 'jekyll-archives'
     gem 'jekyll-figure'
     gem 'bootstrap', '~> 4.4.1'
     gem 'kramdown'

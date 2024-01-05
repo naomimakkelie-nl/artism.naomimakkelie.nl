@@ -1,0 +1,10 @@
+- title: Home
+  url: /
+- title: About
+  url: /about
+- type: spacer 
+  size: 1
+- title: Contact
+  url: /contact
+- title: Artists
+  url: /artists

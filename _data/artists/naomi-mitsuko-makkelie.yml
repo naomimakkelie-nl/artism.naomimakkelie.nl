@@ -1,0 +1,16 @@
+---
+name: "Naomi Mitsuko Makkelie"
+intro: Naomi Mitsuko Makkelie is an artist based in Amsterdam.
+website: https://naomimakkelie.nl
+dateOfBirth: "28/05/1992"
+placeOfOrigin: "Amsterdam, the Netherlands"
+tags:
+  - fine art
+  - painting
+  - hku
+exhibitions:
+  - title: "exhibition 1"
+    year: 2020
+  - title: "exhibition 2"
+    year: 2022
+---
